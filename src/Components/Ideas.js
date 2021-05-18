@@ -5,7 +5,7 @@ export default function Ideas() {
     return (
     
     <>
-        ideas
+        
         <MenuIdeaList />
     
     </>

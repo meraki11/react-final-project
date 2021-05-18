@@ -1,7 +1,7 @@
 import React from 'react';
 import { CalendarView } from './CalendarView';
 import ListGroup from 'react-bootstrap/ListGroup';
-import moment from 'moment'
+
 
 
 export default function SelectedDate () {
@@ -10,11 +10,11 @@ export default function SelectedDate () {
 
     return (
         <>
-            <h2>Menu Ideas for </h2>
+            <h2>Menu Ideas for {{/*selected date*/}} </h2>
             <ListGroup>
-                <ListGroup.Item>Breakfast: </ListGroup.Item>
-                <ListGroup.Item>Lunch: </ListGroup.Item>
-                <ListGroup.Item>Dinner: </ListGroup.Item>
+                <ListGroup.Item>Breakfast: {{/*selected date.breakfast*/}}</ListGroup.Item>
+                <ListGroup.Item>Lunch: {{/*selected date.lunch*/}}</ListGroup.Item>
+                <ListGroup.Item>Dinner: {{/*selected date.dinner*/}}</ListGroup.Item>
             </ListGroup>
         </>
     )

@@ -4,7 +4,6 @@ import MenuIdeaForm from "./MenuIdeaForm";
 export default function Add() {
     return (
     <>
-        add
         <MenuIdeaForm />
     </>
     );

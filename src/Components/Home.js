@@ -5,7 +5,7 @@ import SelectedDate from "./SelectedDate";
 
 export default function Home() {
     return (
-      <>home
+      <>
         <Container fluid>
           <Row>
             <Col lg={4}>
