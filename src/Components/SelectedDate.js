@@ -10,11 +10,11 @@ export default function SelectedDate () {
 
     return (
         <>
-            <h2>Menu Ideas for {{/*selected date*/}} </h2>
+            <h2>Menu Ideas for </h2>
             <ListGroup>
-                <ListGroup.Item>Breakfast: {{/*selected date.breakfast*/}}</ListGroup.Item>
-                <ListGroup.Item>Lunch: {{/*selected date.lunch*/}}</ListGroup.Item>
-                <ListGroup.Item>Dinner: {{/*selected date.dinner*/}}</ListGroup.Item>
+                <ListGroup.Item>Breakfast: </ListGroup.Item>
+                <ListGroup.Item>Lunch: </ListGroup.Item>
+                <ListGroup.Item>Dinner: </ListGroup.Item>
             </ListGroup>
         </>
     )
