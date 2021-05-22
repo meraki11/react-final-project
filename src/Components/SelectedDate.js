@@ -1,21 +1,25 @@
-import React from 'react';
-import { CalendarView } from './CalendarView';
+import React, { useState } from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
+import MenuIdea from './MenuIdea';
+import menuSelectedData from './menuSelectedData';
 
+const data = [...menuSelectedData];
 
-
-export default function SelectedDate () {
-    // const displayDate = CalendarView.dateState
-
-
+export default function SelectedDate(props) {
+   console.log(props)
+   
     return (
         <>
-            <h2>Menu Ideas for </h2>
-            <ListGroup>
-                <ListGroup.Item>Breakfast: </ListGroup.Item>
-                <ListGroup.Item>Lunch: </ListGroup.Item>
-                <ListGroup.Item>Dinner: </ListGroup.Item>
-            </ListGroup>
+            <div className='menu'>
+                {data.map((menu) => (
+                    <ListGroup>
+                        <h2>Menu Ideas for {menu.date} </h2>
+                        <ListGroup.Item>Breakfast: {menu.breakfast} </ListGroup.Item>
+                        <ListGroup.Item>Lunch: {menu.lunch} </ListGroup.Item>
+                        <ListGroup.Item>Dinner: {menu.dinner} </ListGroup.Item>
+                    </ListGroup>
+                ))}
+            </div>
         </>
     )
 }

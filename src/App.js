@@ -5,7 +5,7 @@ import NavbarDisplay from "./Components/NavbarDisplay";
 import Home from "./Components/Home";
 import Add from "./Components/Add";
 import Ideas from "./Components/Ideas";
-import Footer from "./Components/Footer"
+import Footer from "./Components/Footer";
 import './App.css';
 
 export default function App() {
